@@ -1,0 +1,42 @@
+{% extends "header.html" %}
+{% block content %}
+<form action="/result" method="post">
+    <div class="form-group">
+        <div class="col-sm-3">
+            <label for="Age">Age:</label>
+        </div>
+        <div class="col-sm-3">
+            <input type="text" name="Age">
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-3">
+            <label for="Gender">Gender:</label>
+        </div>
+        <div class="col-sm-3">
+            <input type="text" name="Gender">
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-3">
+            <label for="Years in IT">Years:</label>
+        </div>
+        <div class="col-sm-3">
+            <input type="text" name="Years in IT">
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-3">
+            <label for="Skills">Skills:</label>
+        </div>
+        <div class="col-sm-3">
+            <textarea name="Skills" cols="22"></textarea>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-3">
+            <input class="btn btn-primary" type="submit" value="Send">
+        </div>
+    </div>
+</form>
+{% endblock %}
